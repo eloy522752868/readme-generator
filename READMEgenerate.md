@@ -1,5 +1,5 @@
-# Testresdme
- [License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
+# jdjaja
+ [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://img.shields.io/badge/License-MIT-yellow.svg)
 
  ## Table of Contents
  1. [Description](#description)
@@ -12,7 +12,7 @@
 
  ## Decription
 
- testing the readmerepo
+ ajjsj
 
 
  ## Insatllation
@@ -22,7 +22,14 @@
  npm i
  ## Usage
 
- To use, please first run blablabla
+ To use, please first run sjjs
 
 
+
+ ## Insatllation
+
+
+ ## License
+
+ [Lic](https://img.shields.io/badge/License-MIT-yellow.svg)
 

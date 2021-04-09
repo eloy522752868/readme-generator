@@ -1,10 +1,55 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
+
+function softwareLicense(licenseType, needLink) 
+{
+    let licLink;
+    console.log(needLink)
+    if (needLink === true) {
+      switch (licenseType) {
+        case 'MIT':
+          licLink= 'https://opensource.org/licenses/Apache-2.0';
+          break;        
+        case 'APACHE2.0':
+          licLink = 'https://opensource.org/licenses/Apache-2.0';
+          break;
+        case 'GPL3.0':
+          licLink= 'https://opensource.org/search/node/GPL3.0';
+          break;
+        default:
+          licLink = 'None';
+          break;
+      };
+    }
+    else
+    {
+      switch (licenseType) {
+        case 'MIT':
+          licLink= 'https://img.shields.io/badge/License-MIT-yellow.svg';
+          break;       
+        case 'APACHE2.0':
+          licLink = 'https://img.shields.io/badge/License-Apache%202.0-blue.svg';
+          break;
+        case 'GPL3.0':
+          licLink = 'https://img.shields.io/badge/license-GPL3.0-red.svg';
+          break;
+        default:
+          licLink = 'None';
+          break;
+      };
+    }
+    return licLink ;
+}
+
+
 function renderLicenseBadge(license) 
 {
+  let LicenseBadge = softwareLicense(license,false);
+
   if(license !== "None")
   {
-    return `[License Badge](https://img.shields.io/badge/license-${license}-brightgreen)`    
+    return `[![License](${LicenseBadge})](${renderLicenseLink(license)})`  
   }
   return ""
 }
@@ -14,12 +59,14 @@ function renderLicenseBadge(license)
 // If there is no license, return an empty string
 function renderLicenseLink(license) 
 {
+  let LicenseBadgeLink = softwareLicense(license,false);
   if(license !== "None")
   {
-    return `1. [License](#license)`
+    return LicenseBadgeLink
   }
-    return ""
+    return "None"
 }
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -34,7 +81,7 @@ function generateMarkdown(data) {
  1. [Description](#description)
  1. [Insallation](#installation)
  1. [Usage](#usage)
- ${renderLicenseLink(data.license)}
+ 1. [License](#license)
  1. [Contributing](#contributing)
  1. [Tests](#tests)
  1. [Questions](#questions)
@@ -53,6 +100,13 @@ function generateMarkdown(data) {
 
  To use, please first run ${data.userUse}\r\n
 
+
+ ## Insatllation
+
+
+ ## License
+
+ [Lic](${renderLicenseLink(data.license)})
 
 `;
 }
