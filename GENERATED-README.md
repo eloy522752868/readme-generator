@@ -1,5 +1,5 @@
-# fjsjjs
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# readme-generator
+ [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
 
  ## Table of Contents
  1. [Description](#description)
@@ -12,7 +12,7 @@
 
  ## Decription
 
- jfjjs
+ This project is to demostrate creating a readme file using javascript and node.js.
 
 
  ## Insatllation
@@ -22,7 +22,7 @@
 
  ## Usage
 
- To use, please first run ff
+ To use, please first run your are able see the generated readme file called "GENERATED-README.md" but can't generate file again but can see the video how it was done.
 
 
  ## License
@@ -31,9 +31,9 @@
 
  ## Contributing
 
- ff
+ your are able see the generated readme file called "GENERATED-README.md" but can't generate file again but can see the video how it was done.
 
- ss
+ If like send me an email by click below on "email me" I can provide mo detail or addtional permison for repo for you can contrubute.
 
  ## Tests
 

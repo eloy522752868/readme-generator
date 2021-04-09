@@ -8,7 +8,6 @@ function softwareLicense(licenseType, needLink)
 {
   // added condition to handle one function that return based on requested a image link or lic link dynamically based on selection.
     let licLink;
-    console.log(needLink)
     if (needLink === true) {
       switch (licenseType) {
         case 'MIT':
