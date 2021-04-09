@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+//modified by: Eloy Gonzalez
+//modified date: 04/08/2021
+//Include packages needed for this application
 const generateMarkdownfunc = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input and  rename our destructured properties like so
 const questions = [
    "What is your Github username?",
    "What is your email address?",
@@ -18,26 +18,23 @@ const questions = [
    "What does the user need to know about contributing to the repo?"
 ];
 
+
+//rename our destructured properties like so
 const [userName, email, projectName, shortDesc, license, installCommand, testCommand, userUse, userContribute] = questions
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) 
 {
-   console.log(data.name);
-   //content += "\n ### Name: " + data.name + "\n ";
-   const filename =  fileName ; //`${data.name.toLowerCase().split(' ').join('')}.txt`;
-
+   const filename =  fileName ; 
    fs.writeFile(filename,data, (err) =>
      err ? console.log(err) : console.log('Success!'))
-
 }
 
 // TODO: Create a function to initialize app
 function init() {
   
-  // console.log(generateMarkdownfunc("Test"));
-    // TODO: Create a function to initialize app
+//adding prompt user input
     const [userName, email, projectName, shortDesc, license, installCommand, testCommand, userUse, userContribute] = questions
 
    inquirer
@@ -93,16 +90,15 @@ function init() {
     },
    ])
    .then((data) => {
-    // console.log(generateMarkdownfunc(data));
+       
+  // Using the file system module to read and write the README.md file, I calling the file GENERATED-README.md.
      writeToFile("GENERATED-README.md",generateMarkdownfunc(data))
    });
 
  }
 
-
 // Function call to initialize app
 init();
 
-  
-  // Using the file system module to read and write the README.md file
+
 

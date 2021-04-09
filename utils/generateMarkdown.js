@@ -1,9 +1,12 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//modified by: Eloy Gonzalez
+//modified date: 04/08/2021
 
+//Create/modified a functions that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
 
 function softwareLicense(licenseType, needLink) 
 {
+  // added condition to handle one function that return based on requested a image link or lic link dynamically based on selection.
     let licLink;
     console.log(needLink)
     if (needLink === true) {
@@ -42,9 +45,10 @@ function softwareLicense(licenseType, needLink)
     return licLink ;
 }
 
-
 function renderLicenseBadge(license) 
 {
+    // calling badge link from softwareLicense that return based on requested a image link based on selection.
+    // If there is no license, return an empty string
   let LicenseBadge = softwareLicense(license,false);
 
   if(license !== "None")
@@ -53,9 +57,7 @@ function renderLicenseBadge(license)
   }
   return ""
 }
-
-
-// TODO: Create a function that returns the license link
+ // calling License link from softwareLicense that return based on requested a lic link based on selection.returns 
 // If there is no license, return an empty string
 function renderLicenseLink(license) 
 {
@@ -67,12 +69,10 @@ function renderLicenseLink(license)
     return "None"
 }
 
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Create a function that returns the license section of README
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectName}
  ${renderLicenseBadge(data.license)}
@@ -92,23 +92,15 @@ function generateMarkdown(data) {
 
  ## Insatllation
 
- To Install necessary despondencies, please run the following command:
-
- ${data.installCommand}\r\
+ ${data.installCommand}\r\n
 
  ## Usage
 
  To use, please first run ${data.userUse}\r\n
 
-
- ## Insatllation
-
- ${data.installCommand}\r\n
-
-
  ## License
 
- [Lic](${renderLicenseLink(data.license)})
+ [${renderLicenseLink(data.license)}](${renderLicenseLink(data.license)})
 
  ## Contributing
 
@@ -125,7 +117,6 @@ function generateMarkdown(data) {
 If you have any question or need to report a issues, please contact me on email below.
 
 [email me:](mailto:eloy522752@gmail.com)
-
 
 `;
 }
