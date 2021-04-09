@@ -1,5 +1,5 @@
-# readmegenerate
- [License Badge](https://img.shields.io/badge/license-APACHE2.0-brightgreen)
+# Testresdme
+ [License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
  ## Table of Contents
  1. [Description](#description)
@@ -12,7 +12,7 @@
 
  ## Decription
 
- This to generate a test
+ testing the readmerepo
 
 
  ## Insatllation
@@ -22,9 +22,7 @@
  npm i
  ## Usage
 
- To use, please first run npm i
+ To use, please first run blablabla
 
 
- undefined
 
- 
