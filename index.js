@@ -26,7 +26,7 @@ function writeToFile(fileName, data)
 {
    console.log(data.name);
    //content += "\n ### Name: " + data.name + "\n ";
-   const filename =    "READMEgenerate.md"; //`${data.name.toLowerCase().split(' ').join('')}.txt`;
+   const filename =  fileName ; //`${data.name.toLowerCase().split(' ').join('')}.txt`;
 
    fs.writeFile(filename,data, (err) =>
      err ? console.log(err) : console.log('Success!'))
@@ -94,7 +94,7 @@ function init() {
    ])
    .then((data) => {
     // console.log(generateMarkdownfunc(data));
-     writeToFile("TEST",generateMarkdownfunc(data))
+     writeToFile("GENERATED-README.md",generateMarkdownfunc(data))
    });
 
  }

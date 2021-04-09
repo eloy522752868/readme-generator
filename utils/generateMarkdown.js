@@ -59,7 +59,7 @@ function renderLicenseBadge(license)
 // If there is no license, return an empty string
 function renderLicenseLink(license) 
 {
-  let LicenseBadgeLink = softwareLicense(license,false);
+  let LicenseBadgeLink = softwareLicense(license,true);
   if(license !== "None")
   {
     return LicenseBadgeLink
@@ -79,7 +79,7 @@ function generateMarkdown(data) {
 
  ## Table of Contents
  1. [Description](#description)
- 1. [Insallation](#installation)
+ 1. [Installation](#installation)
  1. [Usage](#usage)
  1. [License](#license)
  1. [Contributing](#contributing)
@@ -92,7 +92,7 @@ function generateMarkdown(data) {
 
  ## Insatllation
 
- To Install nessary despendencies, please run the following command:
+ To Install necessary despondencies, please run the following command:
 
  ${data.installCommand}\r\
 
@@ -103,10 +103,29 @@ function generateMarkdown(data) {
 
  ## Insatllation
 
+ ${data.installCommand}\r\n
+
 
  ## License
 
  [Lic](${renderLicenseLink(data.license)})
+
+ ## Contributing
+
+ ${data.userUse}
+
+ ${data.userContribute}
+
+ ## Tests
+
+ ${data.testCommand}\r\n
+
+ ## Questions
+
+If you have any question or need to report a issues, please contact me on email below.
+
+[email me:](mailto:eloy522752@gmail.com)
+
 
 `;
 }
