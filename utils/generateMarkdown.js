@@ -115,7 +115,8 @@ function generateMarkdown(data) {
 
 If you have any question or need to report a issues, please contact me on email below.
 
-[email me:](mailto:eloy522752@gmail.com)
+[My Profile:](https://github.com/${data.userName})
+
 
 `;
 }

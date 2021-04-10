@@ -12,7 +12,7 @@
 
  ## Decription
 
- This project to show how auto generat the file using node.js.
+ this to generate a read me.
 
 
  ## Insatllation
@@ -22,7 +22,7 @@
 
  ## Usage
 
- To use, please first run With this repo you can generate the file. But only be able to view the file readme.md
+ To use, please first run this genrate a readme and can see example on video below.
 
 
  ## License
@@ -31,9 +31,9 @@
 
  ## Contributing
 
- With this repo you can generate the file. But only be able to view the file readme.md
+ this genrate a readme and can see example on video below.
 
- Please contact me if would like to add.
+ Please contact me via my profile below.
 
  ## Tests
 
@@ -44,5 +44,6 @@
 
 If you have any question or need to report a issues, please contact me on email below.
 
-[email me:](mailto:eloy522752@gmail.com)
+[My Profile:](https://github.com/eloy522752868)
+
 
