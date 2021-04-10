@@ -8,15 +8,15 @@ When creating an open source project on GitHub, it’s important to have a high-
 
 ![StartPrompt](./images/nodestartterminal.png)
 
-# Ask Questions regarding  information to generate readme
+### Ask questions regarding  information to generate readme
 
 ![Questions](./images/nodesquestions.png)
 
-# Generated readme and preview
+### Generated readme and preview
 
 ![Generated Readme](./images/nodesreadmes.png)
 
-## Deployed Site Details
+### Deployed Site Details
 
 Link to readme file below:
 
