@@ -4,7 +4,7 @@ When creating an open source project on GitHub, it’s important to have a high-
 
 ## Screenshots of readme generation & readme
 
-# Start prompt input to generate file
+### Start prompt input to generate file
 
 ![StartPrompt](./images/nodestartterminal.png)
 
