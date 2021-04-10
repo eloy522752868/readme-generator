@@ -12,7 +12,7 @@
 
  ## Decription
 
- This project is to demostrate creating a readme file using javascript and node.js.
+ This project to show how auto generat the file using node.js.
 
 
  ## Insatllation
@@ -22,7 +22,7 @@
 
  ## Usage
 
- To use, please first run your are able see the generated readme file called "GENERATED-README.md" but can't generate file again but can see the video how it was done.
+ To use, please first run With this repo you can generate the file. But only be able to view the file readme.md
 
 
  ## License
@@ -31,9 +31,9 @@
 
  ## Contributing
 
- your are able see the generated readme file called "GENERATED-README.md" but can't generate file again but can see the video how it was done.
+ With this repo you can generate the file. But only be able to view the file readme.md
 
- If like send me an email by click below on "email me" I can provide mo detail or addtional permison for repo for you can contrubute.
+ Please contact me if would like to add.
 
  ## Tests
 
